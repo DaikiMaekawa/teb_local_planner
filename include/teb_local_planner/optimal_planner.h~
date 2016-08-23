@@ -225,7 +225,7 @@ public:
    * @param[out] omega rotational velocity [rad/s]
    * @return \c true if command is valid, \c false otherwise
    */
-  virtual bool getVelocityCommand(double& v, double& omega, int setpoint_id) const;
+  virtual bool getVelocityCommand(double& v, double& omega) const;
   
   
   /**

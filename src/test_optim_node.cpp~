@@ -162,22 +162,6 @@ void CB_mainCycle(const ros::TimerEvent& e)
     initial_plan.push_back(pose);
     pose.pose.position.y = 4.0;
     initial_plan.push_back(pose);
-    pose.pose.position.y = 3.0;
-    initial_plan.push_back(pose);
-    pose.pose.position.y = 2.0;
-    initial_plan.push_back(pose);
-    pose.pose.position.y = 1.0;
-    initial_plan.push_back(pose);
-    pose.pose.position.y = 0.0;
-    initial_plan.push_back(pose);
-    pose.pose.position.y = -1.0;
-    initial_plan.push_back(pose);
-    pose.pose.position.y = -2.0;
-    initial_plan.push_back(pose);
-    pose.pose.position.y = -3.0;
-    initial_plan.push_back(pose);
-    pose.pose.position.y = -4.0;
-    initial_plan.push_back(pose);
     pose.pose.position.y = -5.0;
     initial_plan.push_back(pose);
     

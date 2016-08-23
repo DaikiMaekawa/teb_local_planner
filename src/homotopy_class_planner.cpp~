@@ -158,7 +158,7 @@ bool HomotopyClassPlanner::getVelocityCommand(double& v, double& omega, int setp
     return false;
   }
  
-  return best_teb->getVelocityCommand(v, omega, setpoint_id); 
+  return best_teb->getVelocityCommand(v, omega); 
 }
 
 

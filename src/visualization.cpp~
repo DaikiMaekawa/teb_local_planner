@@ -98,8 +98,8 @@ void TebVisualization::publishLocalPlanAndPoses(const TimedElasticBand& teb) con
     // create pose_array (along trajectory)
     geometry_msgs::PoseArray teb_poses;
     
-    teb_poses.header.frame_id = "world_ned"; //@HACK for now.
-    //teb_poses.header.frame_id = teb_path.header.frame_id;
+    //teb_poses.header.frame_id = "world_ned"; //@HACK for now.
+    teb_poses.header.frame_id = teb_path.header.frame_id;
     teb_poses.header.stamp = teb_path.header.stamp;
     
     // fill path msgs with teb configurations
