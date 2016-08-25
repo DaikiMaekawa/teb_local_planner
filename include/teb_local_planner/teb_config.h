@@ -206,11 +206,12 @@ public:
     
     robot.max_vel_x = 2.5;
     robot.max_vel_x_backwards = 2.5;
-    robot.max_vel_theta = 0.3;
-    robot.acc_lim_x = 0.5;
-    robot.acc_lim_theta = 0.5;
-    robot.min_turning_radius = 2.0;
-    robot.wheelbase = 0.225;
+    robot.max_vel_theta = 0.03;
+    robot.acc_lim_x = 0.01;
+    robot.acc_lim_theta = 0.01;
+    robot.min_turning_radius = 0.0;
+    robot.wheelbase = 1.0;
+    //robot.wheelbase = 0.225;
 
     /*
     robot.max_vel_x = 0.4;
@@ -227,7 +228,7 @@ public:
     
     goal_tolerance.xy_goal_tolerance = 0.2;
     goal_tolerance.yaw_goal_tolerance = 0.2;
-    goal_tolerance.free_goal_vel = false;
+    goal_tolerance.free_goal_vel = true;
     
     // Obstacles
     
@@ -247,7 +248,7 @@ public:
     optim.optimization_activate = true;
     optim.optimization_verbose = false;
     optim.penalty_epsilon = 0.1;
-    optim.weight_max_vel_x = 2; //1
+    optim.weight_max_vel_x = 4; //1
     optim.weight_max_vel_theta = 1;
     optim.weight_acc_lim_x = 1;
     optim.weight_acc_lim_theta = 1;
